@@ -1,0 +1,7 @@
+<center><h1>All Flowers</h1></center>
+
+<% @flowers.each do |flower| %>
+  <h3><a href="/api/v1/flowers/<%= flower.id %>"><%= flower.name %></a></h3>
+  <p><%= flower.color %></p>
+  <hr>
+<% end %>

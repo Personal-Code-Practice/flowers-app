@@ -1,0 +1,6 @@
+<center><h1>Flower</h1></center>
+
+<p>Name: <%= @flower.name %></p>
+<p>Color: <%= @flower.color %></p>
+<hr>
+<p><%= link_to "Edit", "/api/v1/flowers/#{@flower.id}/edit", class: "btn btn-success" %> | <%= link_to "Delete", "/api/v1/flowers/#{@flower.id}", {method: :delete, class: "danger"} %></p>

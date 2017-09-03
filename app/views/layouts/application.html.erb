@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlowersApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <p>
+    <a href="http://localhost:3000/api/v1/flowers">All Flowers</a> | 
+    <a href="http://localhost:3000/api/v1/flowers/new">New Flower</a>
+    </p>
+    <%= yield %>
+  </body>
+</html>

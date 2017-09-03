@@ -1,0 +1,12 @@
+<center><h1>New Flower</h1></center>
+<%= form_tag "/api/v1/flowers", method: :post do %>
+  <div>
+    <p><%= label_tag :name %></p>
+    <p><%= text_field_tag :name %></p>
+  </div>
+  <div>
+    <p><%= label_tag :color %></p>
+    <p><%= text_field_tag :color %></p>
+  </div>
+  <p><%= submit_tag "Submit" %></p>
+<% end %>

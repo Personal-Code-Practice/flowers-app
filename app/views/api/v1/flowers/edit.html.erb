@@ -1,0 +1,13 @@
+<center><h1>Edit Flower</h1></center>
+
+<%= form_tag("/api/v1/flowers/#{@flower.id}", method: :patch) do %>
+  <div>
+    <p><%= label_tag :name %></p>
+    <p><%= text_field_tag :name, @flower.name %></p>
+  </div>
+  <div>
+    <p><%= label_tag :color %></p>
+    <p><%= text_field_tag :color, @flower.color %></p>
+  </div>
+  <p><%= submit_tag "Update" %></p>
+<% end %>
